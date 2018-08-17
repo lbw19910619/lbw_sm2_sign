@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P5w-yg-jQT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wN0-Ch-KGS">
+            <objects>
+                <navigationController id="P5w-yg-jQT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="noM-hI-o3s">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ppq-Vh-NDc" kind="relationship" relationship="rootViewController" id="XuC-Qo-7IW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5o7-uI-9EE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6892" y="33"/>
+        </scene>
+        <!--国密算法工具-->
+        <scene sceneID="NVo-0R-RKZ">
+            <objects>
+                <viewController id="ppq-Vh-NDc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I9i-xG-Mx0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入SM2私钥：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-kG-Hyu">
+                                <rect key="frame" x="16" y="114" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="99acf7c939adc4463a8944f784007004b10baeae275cab9f026a80177fbd22d2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X59-V6-DpB">
+                                <rect key="frame" x="16" y="150" width="343" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="ly4-YY-l3r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入SM2公钥：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5m-8S-skp">
+                                <rect key="frame" x="16" y="240" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0fg-26-SeI">
+                                <rect key="frame" x="16" y="276" width="343" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="hzw-YC-Htz"/>
+                                </constraints>
+                                <string key="text">39aac3127f8c38f59c64cd0fc70892810b471cdb47220e8053181f226d567022be7b35adba95fa53f449f6a5df5091b3f7e2733cf1551d099f6d4c6095f8e402</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pO-le-Pck">
+                                <rect key="frame" x="16" y="381" width="343" height="45"/>
+                                <color key="backgroundColor" red="0.13333" green="0.65490000000000004" blue="0.94118000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="k5F-eY-ZzD"/>
+                                </constraints>
+                                <state key="normal" title="国密SM2签名">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sm2_sign:" destination="ppq-Vh-NDc" eventType="touchUpInside" id="8Ja-M2-eKj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签名结果：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeG-KH-ERd">
+                                <rect key="frame" x="16" y="441" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="签名结果" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8pF-VT-Zqc">
+                                <rect key="frame" x="16" y="477" width="343" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Igf-Pa-VBf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzD-h6-qdZ">
+                                <rect key="frame" x="16" y="582" width="343" height="45"/>
+                                <color key="backgroundColor" red="0.13333" green="0.65490000000000004" blue="0.94118000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cgJ-LE-Jrl"/>
+                                </constraints>
+                                <state key="normal" title="国密SM2验签">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sm2_vertify:" destination="ppq-Vh-NDc" eventType="touchUpInside" id="PtG-o9-1Af"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96912556890000001" green="0.96985918280000005" blue="0.96923929450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EzD-h6-qdZ" firstAttribute="height" secondItem="0pO-le-Pck" secondAttribute="height" id="34C-vM-AaT"/>
+                            <constraint firstItem="m5m-8S-skp" firstAttribute="centerX" secondItem="cvb-kG-Hyu" secondAttribute="centerX" id="7kX-Zc-5sE"/>
+                            <constraint firstItem="m5m-8S-skp" firstAttribute="top" secondItem="X59-V6-DpB" secondAttribute="bottom" constant="15" id="7mR-nw-Z7t"/>
+                            <constraint firstItem="cvb-kG-Hyu" firstAttribute="width" secondItem="I9i-xG-Mx0" secondAttribute="width" multiplier="343:375" id="88p-rj-T3y"/>
+                            <constraint firstItem="X59-V6-DpB" firstAttribute="centerX" secondItem="cvb-kG-Hyu" secondAttribute="centerX" id="8Qg-79-1Eh"/>
+                            <constraint firstItem="EzD-h6-qdZ" firstAttribute="centerX" secondItem="0pO-le-Pck" secondAttribute="centerX" id="MYP-k4-s8y"/>
+                            <constraint firstItem="0pO-le-Pck" firstAttribute="top" secondItem="0fg-26-SeI" secondAttribute="bottom" constant="30" id="OpI-bj-oYb"/>
+                            <constraint firstItem="8pF-VT-Zqc" firstAttribute="top" secondItem="TeG-KH-ERd" secondAttribute="bottom" constant="15" id="Uqs-Bd-N0c"/>
+                            <constraint firstItem="m5m-8S-skp" firstAttribute="width" secondItem="cvb-kG-Hyu" secondAttribute="width" id="Yqp-bT-CxV"/>
+                            <constraint firstItem="X59-V6-DpB" firstAttribute="top" secondItem="cvb-kG-Hyu" secondAttribute="bottom" constant="15" id="Zju-lT-ugy"/>
+                            <constraint firstItem="0fg-26-SeI" firstAttribute="top" secondItem="m5m-8S-skp" secondAttribute="bottom" constant="15" id="aD9-Ho-Hwc"/>
+                            <constraint firstItem="EzD-h6-qdZ" firstAttribute="width" secondItem="0pO-le-Pck" secondAttribute="width" id="aSt-8c-IQx"/>
+                            <constraint firstItem="TeG-KH-ERd" firstAttribute="centerX" secondItem="0pO-le-Pck" secondAttribute="centerX" id="bG0-cm-9Pm"/>
+                            <constraint firstItem="8pF-VT-Zqc" firstAttribute="height" secondItem="0fg-26-SeI" secondAttribute="height" id="dHQ-nP-5Sf"/>
+                            <constraint firstItem="TeG-KH-ERd" firstAttribute="top" secondItem="0pO-le-Pck" secondAttribute="bottom" constant="15" id="dQt-LM-FXj"/>
+                            <constraint firstItem="X59-V6-DpB" firstAttribute="width" secondItem="cvb-kG-Hyu" secondAttribute="width" id="k0g-ce-hPk"/>
+                            <constraint firstItem="8pF-VT-Zqc" firstAttribute="centerX" secondItem="TeG-KH-ERd" secondAttribute="centerX" id="p4O-nb-4Zl"/>
+                            <constraint firstItem="0fg-26-SeI" firstAttribute="width" secondItem="X59-V6-DpB" secondAttribute="width" id="r6F-os-yfn"/>
+                            <constraint firstItem="0pO-le-Pck" firstAttribute="centerX" secondItem="X59-V6-DpB" secondAttribute="centerX" id="rY1-GJ-vot"/>
+                            <constraint firstItem="0pO-le-Pck" firstAttribute="width" secondItem="cvb-kG-Hyu" secondAttribute="width" id="ri6-ag-VTi"/>
+                            <constraint firstItem="TeG-KH-ERd" firstAttribute="width" secondItem="0pO-le-Pck" secondAttribute="width" id="two-EV-A2Q"/>
+                            <constraint firstItem="EzD-h6-qdZ" firstAttribute="top" secondItem="8pF-VT-Zqc" secondAttribute="bottom" constant="30" id="vG4-5c-ACC"/>
+                            <constraint firstItem="cvb-kG-Hyu" firstAttribute="top" secondItem="bfv-nM-G9F" secondAttribute="top" constant="50" id="vyj-k6-73c"/>
+                            <constraint firstItem="0fg-26-SeI" firstAttribute="centerX" secondItem="m5m-8S-skp" secondAttribute="centerX" id="yQa-Wq-0o9"/>
+                            <constraint firstItem="8pF-VT-Zqc" firstAttribute="width" secondItem="TeG-KH-ERd" secondAttribute="width" id="yod-aO-l63"/>
+                            <constraint firstItem="cvb-kG-Hyu" firstAttribute="leading" secondItem="bfv-nM-G9F" secondAttribute="leading" constant="16" id="zgg-hi-CUz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bfv-nM-G9F"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="国密算法工具" id="rAS-EA-nEs"/>
+                    <connections>
+                        <outlet property="privateKeyTextView" destination="X59-V6-DpB" id="m2o-tS-ZQy"/>
+                        <outlet property="publicKeyTextView" destination="0fg-26-SeI" id="D3W-la-064"/>
+                        <outlet property="signDataTextView" destination="8pF-VT-Zqc" id="C1a-yV-Wsf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXe-aZ-5ay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5914.3999999999996" y="21.139430284857571"/>
+        </scene>
+    </scenes>
+</document>
